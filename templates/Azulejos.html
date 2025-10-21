@@ -1,0 +1,32 @@
+{%include 'header.html'%}    
+        <main>
+            
+            <div>
+                <!--Inputs de los datos necesarios para la ejecucion del proceso-->
+                <p>INGRESE EL ANCHO DEL PISO:</p>
+                <input id="input-ancho"  class="input-entrada"  type="number" placeholder="En metros...">
+
+                <p>INGRESE EL LARGO DEL PISO:</p>
+                <input id="input-largo" class="input-entrada" type="number" placeholder="En metros...">
+
+                <p>INGRESE EL TAMAÑO DEL AZULEJO:</p>
+                <input id="input-azulejo"  class="input-entrada"  type="number" placeholder="Lado en cm...">
+
+                <p>INGRESE EL PRECIO DEL AZULEJO POR UNIDAD:</p>
+                <input id="input-precio"  class="input-entrada"  type="number" placeholder="En pesos...">
+                <!--Boton que realizara todas las operaciones necesarias-->
+                <button id="btn-calcular" class="botton-calcular">CALCULAR</button>
+            </div>
+            <div>
+                <!--Parrafos que mostraran los resultados de las operaciones-->
+
+                <p>RESULTADOS</p>
+
+                <p id="resultado-area-piso"></p>
+                <p id="resultado-area-azulejo"></p>
+                <p id="resultado-cantidad-azulejo"></p>
+                <p id="resultado-precio-total"></p>
+            </div>
+            
+        </main>
+{% include 'footer.html'%}        

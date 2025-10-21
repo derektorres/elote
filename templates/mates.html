@@ -1,0 +1,22 @@
+{% include 'header.html'%}
+<main>
+     <div>
+        <p>INGRESA UN NUMERO:</p>
+        <input id="input-value1"   class="input-entrada" type="number" placeholder=" Asegurate que es un numero">
+
+        <p>INGRESA UN NUMERO:</p>
+        <input id="input-value2"   class="input-entrada" type="number" placeholder=" Asegurate que es un numero">
+
+
+
+    </div>
+    <div>
+        <button class="botton-calcular" id="btn-sumar">SUMAR</button>
+        <button class="botton-calcular" id="btn-restar">RESTAR</button>
+        <button class="botton-calcular" id="btn-multiplicar">MULTIPLICAR</button>
+        <button class="botton-calcular" id="btn-dividir">DIVIDIR</button>
+    </div>
+</main>
+<script src="{{url_for('static', filename='js/matesescripts.js')}}"></script>
+
+{% include 'footer.html'%}       

@@ -1,0 +1,12 @@
+{%include 'header.html'%} 
+<main>
+    <div>
+        <p>INGRESA UNA CANTIDAD EN PESOS:</p>
+        <input id="input-valuePesos"   class="input-entrada" type="number" placeholder=" Asegurate que es un numero">
+    </div>
+    <div>
+        <button class="botton-calcular" id="btn-convertir">CALCULAR</button>
+    </div>
+</main>
+<script src="{{url_for('static', filename='js/MoneyScript.js')}}"></script>
+{% include 'footer.html'%}
