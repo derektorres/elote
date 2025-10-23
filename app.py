@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
 from entities.palindromo import Palindromo
 from entities.animal import animal
+from entities.Sorteo import Sorteo
+
+
 app = Flask(__name__)
 
 @app.route('/index')
@@ -22,6 +25,22 @@ def animales():
 @app.route('/Money')
 def Money():
     return render_template('Money.html')
+
+@app.route('/Sorteo',  methods=['GET', 'POST'])
+def Sorteo():
+     if request.method == 'POST':
+        primero = request.form.get("input-primero")
+        segundo = request.form.get("input-segundo")
+        tercero = request.form.get("input-tercero")
+
+        s = Sorteo(primero,segundo,tercero)
+        
+
+        resultadillo = s.Verquepedo()
+
+        return render_template('SorteoResultado.html', resultadoSorteo = resultadillo)
+     
+     return render_template('Sorteo.html')
 
 @app.route('/palindromo', methods=['GET', 'POST'])
 def palindromo():
