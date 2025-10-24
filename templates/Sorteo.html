@@ -2,17 +2,20 @@
         <main>
             
             <div>
-                <!--Inputs de los datos necesarios para la ejecucion del proceso-->
-                <p>INGRESE EL PRIMER NUMERO(1-100):</p>
-                <input id="input-primero" name="input_primero" class="input-entrada"  type="number" placeholder="...">
+                <form method="post" action="{{ url_for('Sorteo') }}">
+                    <!--Inputs de los datos necesarios para la ejecucion del proceso-->
+                    <p>INGRESE EL PRIMER NUMERO(1-100):</p>
+                    <input id="input-primero" name="input_primero" class="input-entrada"  type="number" placeholder="...">
 
-                <p>INGRESE EL SEGUNDO NUMERO(1-100):</p>
-                <input id="input-segundo" name="input_segundo"  class="input-entrada" type="number" placeholder="...">
+                    <p>INGRESE EL SEGUNDO NUMERO(1-100):</p>
+                    <input id="input-segundo" name="input_segundo"  class="input-entrada" type="number" placeholder="...">
 
-                <p>INGRESE EL TERCER NUMERO(1-100):</p>
-                <input id="input-tercero" name="input_tercero"  class="input-entrada"  type="number" placeholder="...">
+                    <p>INGRESE EL TERCER NUMERO(1-100):</p>
+                    <input id="input-tercero" name="input_tercero"  class="input-entrada"  type="number" placeholder="...">
 
-                <button class="botton-calcular" type="submit">ACEPTAR</button>
+                    <button class="botton-calcular" type="submit">ACEPTAR</button>
+
+                </form>
             </div>
             
         </main>

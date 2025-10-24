@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from entities.palindromo import Palindromo
 from entities.animal import animal
-from entities.Sorteo import Sorteo
+from entities.Sorteo import SorteoClass
 
 
 app = Flask(__name__)
@@ -29,11 +29,11 @@ def Money():
 @app.route('/Sorteo',  methods=['GET', 'POST'])
 def Sorteo():
      if request.method == 'POST':
-        primero = request.form.get("input-primero")
-        segundo = request.form.get("input-segundo")
-        tercero = request.form.get("input-tercero")
+        primero = int(request.form.get("input_primero"))
+        segundo = int(request.form.get("input_segundo"))
+        tercero = int(request.form.get("input_tercero"))
 
-        s = Sorteo(primero,segundo,tercero)
+        s = SorteoClass(primero,segundo,tercero)
         
 
         resultadillo = s.Verquepedo()

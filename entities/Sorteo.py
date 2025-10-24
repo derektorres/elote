@@ -1,5 +1,5 @@
 import random
-class Sorteo:
+class SorteoClass:
     def __init__(self,primero, segundo, tercero):
         
         self.primero = primero
@@ -13,7 +13,7 @@ class Sorteo:
         SelectedNumberTwo = self.segundo
         SelectedNumberThree = self.tercero
 
-        RandomWinner = random.randint(1-100)
+        RandomWinner = random.randint(1,100)
         
 
         if (SelectedNumberOne or SelectedNumberTwo or SelectedNumberThree) == (RandomWinner):
