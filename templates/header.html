@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MI APLICACION</title>
+        <link rel="icon" href="resources/favicon.ico">
+        <link rel="stylesheet" href="{{ url_for('static', filename='Styles/Styles.css') }}">
+        <script src="{{ url_for('static', filename='js/Scripts.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/matesescripts.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/AzulejosScripts.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/MoneyScript.js') }}"></script>
+    </head>
+    <body>
+        <header>
+            <a href= "{{ url_for('index') }}">INICIO</a>
+            <a href= "{{ url_for('mates') }}">MATEMATICAS</a>
+            <a href= "{{ url_for('Azulejos') }}">AZULJEOS</a>
+            <a href="{{ url_for('palindromo') }}"> PALINDROMO</a>
+            <a href= "{{ url_for('Money') }}">DOLARES</a>
+            <a href= "{{ url_for('animales') }}">ANIMALES</a>
+            <a href="{{ url_for('Sorteo') }}">SORTEO</a>
+
+        </header>
+    
+
+
